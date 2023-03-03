@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="images/favicon.ico" />
+        <link rel="icon" href="{{ asset('images/r.png') }}" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -13,7 +13,7 @@
             referrerpolicy="no-referrer"
         />
     
-        <title>LaraGigs | Find Laravel Jobs & Projects</title>
+        <title>RonrickJobposting | Find Jobs & Projects</title>
         @vite('resources/css/app.css')
         <script src="//unpkg.com/alpinejs" defer></script>
         <script>

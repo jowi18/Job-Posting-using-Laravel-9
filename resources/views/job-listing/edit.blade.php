@@ -171,7 +171,7 @@ class="bg-gray-50 border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24"
             Update
         </button>
 
-        <a href="/" class="text-black ml-4"> Back </a>
+        <a href="/joblist/manage/{{ $listing->id }}" class="text-black ml-4"> Back </a>
     </div>
 </form>
 

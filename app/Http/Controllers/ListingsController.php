@@ -81,8 +81,14 @@ class ListingsController extends Controller
     }
 
     public function manage(){
+        $id = auth()->id();
+        $listing = User::with(['listings' => function($q){
+            $q->orderBy('created_at', 'desc');
+            $q->filter(request(['tag', 'search']));
+        }])->where('id', $id)->get();
+        return view('job-listing.manage', ['list1' => $listing]);
 
-        return view('job-listing.manage', ['listings' => auth()->user()->listings()->filter(request(['tag', 'search']))->get()]);
+       // return view('job-listing.manage', ['listings' => auth()->user()->listings()->filter(request(['tag', 'search']))->get()]);
     }
     
 }
